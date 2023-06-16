@@ -41,7 +41,7 @@ in search.py Plot pareto baseline - change the search experiment to path you wan
 
 in train.py - change paths in line 68 and 75
 
-We have provided jupyter notebooks for each model - gpt2, opt and ctrl. You can use them as a starting point.
+### We have provided jupyter notebooks for each model - gpt2, opt and ctrl. You can use them as a starting point. They can be found in the Notebooks directory
 
 
 Codes belong to LiteTransformerSearch.
