@@ -1,0 +1,217 @@
+MemTransformerLM(
+  (word_emb): AdaptiveEmbedding(
+    (emb_layers): ModuleList(
+      (0): Embedding(267736, 512)
+    )
+    (emb_projs): ParameterList(  (0): Parameter containing: [torch.float32 of size 960x512])
+  )
+  (drop): Dropout(p=0.1, inplace=False)
+  (layers): ModuleList(
+    (0): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (1): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (2): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (3): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (4): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (5): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (6): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (7): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (8): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (9): RelPartialLearnableDecoderLayer(
+      (dec_attn): RelPartialLearnableMultiHeadAttn(
+        (qkv_net): Linear(in_features=960, out_features=1536, bias=False)
+        (drop): Dropout(p=0.1, inplace=False)
+        (dropatt): Dropout(p=0.0, inplace=False)
+        (o_net): Linear(in_features=512, out_features=960, bias=False)
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+        (r_net): Linear(in_features=960, out_features=512, bias=False)
+      )
+      (pos_ff): PositionwiseFF(
+        (CoreNet): Sequential(
+          (0): Linear(in_features=960, out_features=4032, bias=True)
+          (1): ReLU(inplace=True)
+          (2): Dropout(p=0.1, inplace=False)
+          (3): Linear(in_features=4032, out_features=960, bias=True)
+          (4): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((960,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (crit): ProjectedAdaptiveLogSoftmax(
+    (out_layers_biases): ParameterList(  (0): Parameter containing: [torch.float32 of size 267736])
+    (shared_out_projs): ParameterList(  (0): Parameter containing: [torch.float32 of size 960x512])
+    (out_projs): OptionalParameterList(  (0): Parameter containing: [torch.FloatTensor of size 960x512])
+  )
+  (pos_emb): PositionalEmbedding()
+)
